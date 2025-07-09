@@ -1,1 +1,165 @@
-this is working yes
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PRR - Patient Records</title>
+
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; display: flex; height: 100vh; font-size: -1; color: #5D5D5D; }
+	  #ohead {
+	    position: fixed; /* Fixes the header to the viewport */
+	    top: 0;           /* Positions the header at the top of the viewport */
+	    left: 0;          /* Positions the header at the left edge of the viewport */
+	    width: 100%;      /* Makes the header span the full width of the viewport */
+	    height: 40px;     /* Sets a fixed height for the header */
+	    background-color: #EEE; /* Example background color */
+	    z-index: 1;       /* Ensures the header stays on top of other content */
+	    /* Add padding and other styling as needed */
+	    padding: 10px 0; /* Example padding */
+	    text-align: left; /* Example text alignment */
+	    border-bottom: 1px solid #CCC;
+	    padding-left: 20px;
+
+	}
+	.logo-text {
+	  color: #0D0D0D;
+	  font-weight: 200;
+
+	}
+	.logo-title {
+	  color: #333;
+	  font-size: 1.4em;
+	  font-weight: 600;
+	}
+	.case {
+	  padding-top: 10px;
+	  float: right;
+	  padding-right: 100px;
+	  color: #333;
+	  font-size: 1em;
+	  font-weight: 500;
+
+	}
+	.case a {
+	 float: right;
+	 padding-left: 10px;
+	 text-decoration: none;
+	 margin-right: 100px;
+	 padding-right: 20px;
+	 color: #0073DD;
+	   font-size: 1em;
+	  font-weight: 700;
+	}
+	.box {
+	    width:600px;
+	    height:400px;
+	    background-color:#EFEFEF;
+	    position:fixed;
+	    margin-left:-300px; /* half of width */
+	    margin-top: -250px;  /* half of height */
+	    top:50%;
+	    left:50%;
+	    border: 1px solid #BBB;
+	    border-radius: 15px;
+
+   }
+   .footer {
+   	    margin-top: 550px;
+   	    width: 100%;
+   	    padding: 40px;
+
+   }
+a {
+ color: #0073DD;
+ text-decoration: none;
+}table, td {
+ padding-bottom: 20px;
+}
+
+	</style>
+	</head>
+	<body>
+	  <div id="ohead"><i><span class=logo-title><font color=#FF612B></font>PRR</span> - <span class=logo-text>
+	  Patient Records Review Application</i> &nbsp;&nbsp;&nbsp;&nbsp;<img src=steth.png height=30 valign=top></span>
+	  <span class=case>Case Number: <a href=index.html>12345</a></span></div>
+ <div class=box border=1>
+  <h2 style="text-align:center; margin-bottom: 20px;">Patient Records</h2>
+<hr style="height:2px;border-width:0;color:gray;background-color:gray;margin-bottom: 20px;">
+
+  <table style="margin-left: 30px;padding-right: 30px;" width=100%>
+  <tr>
+  <td colspan=4>
+  <b>Patient:</b> Jane Doe
+  </td>
+  </tr>
+  <tr style="padding-bottom:40px;" >
+  <td >
+  <b>SOAP Notes 7/20/25:</b>:
+  </td>
+  <td>
+  <img src=original1.png height=20 align=absmiddle> <a href=1.pdf target="_blank">Orignal</a>
+  </td>
+  <td><span style="background-color:#FFFCE5;padding:5px;border: 1px solid #ccc;"><img src=enmedrec.png height=20 align=absmiddle> <a href=1.html>Enhanced</a></span></td><td>
+  <img src=redacted.png height=20 align=absmiddle> <b>PII</b> <a href=1rw.pdf target=_blank>Redacted</a>
+  </td>
+	</tr>
+
+  <tr>
+    <td>
+    <b>Episodic Visit 7/20/25:</b>:
+    </td>
+    <td>
+    <img src=original1.png height=20 align=absmiddle> <a href=2.pdf target="_blank">Orignal</a>
+    </td>
+    <td><span style="background-color:#FFFCE5;padding:5px;border: 1px solid #ccc;"><img src=enmedrec.png height=20 align=absmiddle> <a href=2.html>Enhanced</a></span></td><td>
+    <img src=redacted.png height=20 align=absmiddle> <b>PII</b> <a href=2rw.pdf target=_blank>Redacted</a>
+    </td>
+	</tr>
+	  <tr>
+	    <td>
+	    <b>Wellness Visit 7/20/25:</b>:
+	    </td>
+	    <td>
+	    <img src=original1.png height=20 align=absmiddle> <a href=3.pdf target="_blank"f>Orignal</a>
+	    </td>
+	    <td><span style="background-color:#FFFCE5;padding:5px;border: 1px solid #ccc;"><img src=enmedrec.png height=20 align=absmiddle> <a href=3.html>Enhanced</a></span></td><td>
+	    <img src=redacted.png height=20 align=absmiddle> <b>PII</b> <a href=3rw.pdf target=_blank>Redacted</a>
+	    </td>
+	</tr>
+	</table>
+	</div>
+</div>
+<div class=footer>
+<hr style="height:1px;border-width:0;color:#CCC;background-color:#CCC;margin-bottom: 20px; width:100%;">
+
+<font size=-1><b>&bull; Promt Engineering:</b>
+<a href=prompt_hilight.html  target=_blank>Promt to get hilights from text extracted from PDF</a> |
+<a href=prompt_redact.html target=_blank>Promot to get PII matches to redact</a> |
+<a href=code_prompt.txt target=_blank>Prompt to generate the PDF.js code</a>.
+<b>&bull; JSON Files Generated for Hilighting</b>: (
+<a href=1h.json  target=_blank>SOAP Notes</a> |
+<a href=2h.json  target=_blank> Episodic Visit</a> |
+<a href=3h.json  target=_blank>Wellness Visit</a>),
+<b>&bull; JSON Files  Generated for Redacting PII</b>: (
+<a href=1r.json  target=_blank>SOAP Notes</a> |
+<a href=2r.json  target=_blank>Episodic Visit</a> |
+<a href=3r.json  target=_blank>Wellness Visit</a>)
+<b>&bull; Code:</b>: <a href=redact_code.html target=_blank>Python Code for redaction</a> |
+ <a href=extract_pdf2txt_code.html target=_blank>Python Code for Text Extraction</a> |
+ <a href=enhancement_code.txt target=_blank>JS code for enhancements</a> |
+ <a href=openai.txt target=_blank>OpenAI code</a>
+
+</div>
+</body>
+<script>
+  function run(){
+  var password = prompt("Password Please","");
+	  //Change to your own Password
+	  password = btoa(password);
+	  if(password != 'aGFja2F0aG9uMjAyNQ=='){
+	    document.body.innerHTML = '';
+	    document.body.innerHTML = 'Password Failed! Reload to Renter Password';
+	  }
+  }
+// run();
+</script>

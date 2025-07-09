@@ -1,0 +1,154 @@
+%PDF-1.3
+%‚„œ”
+1 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 4 0 R ]
+>>
+endobj
+2 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Page
+/Contents 5 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/ExtGState <<
+/gRLs0 <<
+/ca 0.2
+>>
+>>
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Annots [ ]
+/Parent 1 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 2361
+>>
+stream
+q
+q BT 19.2 TL/F2 16 Tf 1 0 0 1 200 742 Tm(SYNTHETIC ELECTRONIC MEDICAL RECORD)Tj T* ET BT 14.4 TL/F2 12 Tf 1 0 0 1 50 692 Tm(Patient Information)Tj T* ET BT 12 TL/F1 10 Tf 1 0 0 1 60 672 Tm(Patient Name: )Tj T* ET BT 1 0 0 1 60 657 Tm(Date of Birth: )Tj T* ET BT 1 0 0 1 60 642 Tm(Patient ID: 123456789)Tj T* ET BT 1 0 0 1 60 627 Tm(Sex: Male)Tj T* ET BT 1 0 0 1 60 612 Tm(Visit Date: )Tj T* ET BT 1 0 0 1 60 597 Tm(Provider: )Tj[-6613.0007]TJ(, MD)Tj T* ET BT 14.4 TL/F2 12 Tf 1 0 0 1 50 572 Tm(Chief Complaint)Tj T* ET BT 12 TL/F1 10 Tf 1 0 0 1 60 557 Tm(Patient complains of intermittent chest pain for the past 3 days.)Tj T* ET BT 14.4 TL/F2 12 Tf 1 0 0 1 50 532 Tm(Vital Signs)Tj T* ET BT 12 TL/F1 10 Tf 1 0 0 1 60 517 Tm(Blood Pressure: 130/85 mmHg)Tj T* ET BT 1 0 0 1 60 502 Tm(Heart Rate: 78 bpm)Tj T* ET BT 1 0 0 1 60 487 Tm(Respiratory Rate: 16 breaths/min)Tj T* ET BT 1 0 0 1 60 472 Tm<54656d70657261747572653a2039382e36b046>Tj T* ET BT 1 0 0 1 60 457 Tm(Oxygen Saturation: 98%)Tj T* ET BT 14.4 TL/F2 12 Tf 1 0 0 1 50 432 Tm(Assessment / Diagnosis)Tj T* ET BT 12 TL/F1 10 Tf 1 0 0 1 60 417 Tm(1. Chest Pain, unspecified \(R07.9\))Tj T* ET BT 1 0 0 1 60 402 Tm(2. Hypertension \(I10\))Tj T* ET BT 14.4 TL/F2 12 Tf 1 0 0 1 50 377 Tm(Medications)Tj T* ET BT 12 TL/F1 10 Tf 1 0 0 1 60 362 Tm(Lisinopril 10 mg, 1 tablet daily)Tj T* ET BT 1 0 0 1 60 347 Tm(Aspirin 81 mg, 1 tablet daily)Tj T* ET BT 14.4 TL/F2 12 Tf 1 0 0 1 50 322 Tm(Lab Results)Tj T* ET BT 12 TL/F1 10 Tf 1 0 0 1 60 307 Tm(CBC: Within normal limits)Tj T* ET BT 1 0 0 1 60 292 Tm(Lipid Panel: Total Cholesterol 210 mg/dL, HDL 45 mg/dL, LDL 140 mg/dL)Tj T* ET BT 14.4 TL/F2 12 Tf 1 0 0 1 50 267 Tm(Plan)Tj T* ET BT 12 TL/F1 10 Tf 1 0 0 1 60 252 Tm(- Continue current medications.)Tj T* ET BT 1 0 0 1 60 237 Tm(- Schedule follow-up with cardiology.)Tj T* ET BT 1 0 0 1 60 222 Tm(- Recommend stress test within 1 week.)Tj T* ET Q
+
+q
+121.13998 654.01 50.03998 13.73999 re
+h
+0 0 0 RG 0 0 0 rg B
+Q
+
+q
+102.78999 594.01 66.12999 13.73999 re
+h
+0 0 0 RG 0 0 0 rg B
+Q
+
+q
+126.13998 669.01 42.79999 13.73999 re
+h
+0 0 0 RG 0 0 0 rg B
+Q
+
+q
+108.34999 609.01 50.03998 13.73999 re
+h
+0 0 0 RG 0 0 0 rg B
+Q
+
+
+Q
+
+q
+0.0 0.0 612 792 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F1-0 40 Tf
+48 TL
+ET
+/gRLs0 gs
+q
+0.707107 0.707107 -0.707107 0.707107 300 400 cm
+BT
+1 0 0 1 -110 0 Tm
+(REDACTED) Tj
+T*
+ET
+Q
+Q
+
+
+endstream
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+>>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000074 00000 n 
+0000000113 00000 n 
+0000000162 00000 n 
+0000000433 00000 n 
+0000002846 00000 n 
+0000002953 00000 n 
+0000003060 00000 n 
+trailer
+<<
+/Size 9
+/Root 3 0 R
+/Info 2 0 R
+>>
+startxref
+3172
+%%EOF

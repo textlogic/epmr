@@ -1,0 +1,33 @@
+{
+  "Dates": [
+    "01/01/1970",
+    "06/01/2025",
+    "past 3 days",
+    "within 1 week"
+  ],
+  "Names": [
+    "John Doe",
+    "Dr. Jane Smith"
+  ],
+  "Medications": [
+    "Lisinopril 10 mg, 1 tablet daily",
+    "Aspirin 81 mg, 1 tablet daily"
+  ],
+  "Vitals": [
+    "Blood Pressure: 130/85 mmHg",
+    "Heart Rate: 78 bpm",
+    "Respiratory Rate: 16 breaths/min",
+    "Temperature: 98.6F",
+    "Oxygen Saturation: 98%"
+  ],
+  "Tests": [
+    "CBC: Within normal limits",
+    "Lipid Panel: Total Cholesterol 210 mg/dL, HDL 45 mg/dL, LDL 140 mg/dL",
+    "stress test within 1 week"
+  ],
+  "Diagnoses": [
+    "Chest Pain, unspecified (R07.9)",
+    "Hypertension (I10)"
+  ],
+  "Devices": []
+}

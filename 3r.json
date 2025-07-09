@@ -1,0 +1,15 @@
+{
+  "proper_names": [
+    "John Doe",
+    "Dr. Jane Smith"
+  ],
+  "dates": [
+    "01/01/1970",
+    "06/01/2025"
+  ],
+  "organization_names": [],
+  "addresses": [],
+  "states": [],
+  "cities": [],
+  "zip_codes": []
+}

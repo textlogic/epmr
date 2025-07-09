@@ -1,0 +1,51 @@
+{
+  "Dates": [
+    "November 11th 2022",
+    "54 y/o",
+    "4 months ago",
+    "this season",
+    "6 years ago"
+  ],
+  "Names": [
+    "Mallory Zabor",
+    "Esther Parks"
+  ],
+  "Medications": [
+    "Accupril 10 mg PO daily",
+    "Senna",
+    "Colace",
+    "Miralax",
+    "Tylenol"
+  ],
+  "Vitals": [
+    "Weight: 120 lbs",
+    "Height: 5 2",
+    "BP: 110/70",
+    "HR: 92",
+    "RR: 16",
+    "Temp: 37.0",
+    "SpO2: 99%"
+  ],
+  "Tests": [
+    "CBC with diff",
+    "Renal",
+    "CMP",
+    "Liver panel",
+    "lipid panel",
+    "HbA1c",
+    "hormone levels",
+    "KUB to assess stool burden",
+    "EGD to assess hernia",
+    "Colonoscopy",
+    "Cancer screening",
+    "US of lower abdomen"
+  ],
+  "Diagnoses": [
+    "Constipation",
+    "Abdominal mass LLQ with tenderness",
+    "Acute abdominal pain",
+    "Change in bowel habits",
+    "Decreased appetite"
+  ],
+  "Devices": []
+}

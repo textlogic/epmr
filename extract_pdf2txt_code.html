@@ -1,0 +1,33 @@
+<pre>
+# # Converts PDF to Text using pypdf
+def emr_pdf2txt(pdf_file_path, overwrite=True):
+
+    pdf_path_array = path_to_array(pdf_file_path)
+    # Target Text file
+    target_text_file_path = clean_path(TXT_DATA_DIR + '/' + pdf_path_array[-1].split('.')[0] + '.txt')
+    
+    if os.path.exists(target_text_file_path) and overwrite == False:
+            return
+         
+    pdf_txt = ''
+    reader = pypdf.PdfReader(pdf_file_path) 
+    ln = len(reader.pages)       
+    for i in range (ln):
+        page = reader.pages[i] 
+        txt = page.extract_text()
+        # Remove unwanted chars
+        txt = txt.encode('ascii', errors='ignore').decode()
+        txt = re.sub(f'[^{re.escape(string.printable)}]', '', txt)
+        pdf_txt = pdf_txt + '\n' + txt        
+    f = open(target_text_file_path, "w")
+    f.write(pdf_txt)
+    f.close()
+
+        
+# Covert to TXT
+def convert_pdf_dir_files_to_text(overwrite_exiting_data): 
+    flist = glob.glob(PDF_DATA_DIR + '/*.pdf')
+    # print(flist)
+    for ef in flist:
+        # print(clean_path(ef))
+        emr_pdf2txt(clean_path(ef), overwrite_exiting_data)

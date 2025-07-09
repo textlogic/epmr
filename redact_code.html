@@ -1,0 +1,70 @@
+<pre>
+import os, sys
+import re, glob, json, string
+import fitz, spacy, pypdf
+from reportlab.pdfgen import canvas
+from io import BytesIO
+from pypdf import PdfReader, PdfWriter
+from reportlab.lib.pagesizes import letter
+
+def apply_watermark(input_pdf_path, output_pdf_path, watermark_text='REDACTED'):
+    # Create watermark PDF page
+    watermark_pdf = create_watermark_pdf(watermark_text)
+    watermark_reader = PdfReader(watermark_pdf)
+    watermark_page = watermark_reader.pages[0]
+
+    reader = PdfReader(input_pdf_path)
+    writer = PdfWriter()
+
+    for page in reader.pages:
+        page.merge_page(watermark_page)  # Add watermark layer
+        writer.add_page(page)
+
+    with open(output_pdf_path, "wb") as out_file:
+        writer.write(out_file)
+
+import json;
+def redact():
+    flist = glob.glob(PDF_DATA_DIR + '/*.pdf')
+    ###
+    for pdf_file in flist:
+        tag = clean_path(pdf_file).split('/')[-1][0]
+        rfile = TXT_DATA_DIR + tag+'r.json'
+        ofile = TARGET_DATA_DIR + tag + 'r.pdf'
+        redact_tag_list = []
+        try:
+            with open(rfile, 'r') as f:
+                data = json.load(f)
+                level_1_tags_list = list(data.keys())
+                for level_1_tag in level_1_tags_list:
+                    if len(redact_tag_list) == 0:
+                        redact_tag_list = data[level_1_tag]
+                    else:
+                        redact_tag_list = redact_tag_list + data[level_1_tag]
+        except FileNotFoundError:
+            print("Error: 'data.json' not found.")
+        except json.JSONDecodeError:
+            print("Error: Invalid JSON format in 'data.json'.")
+
+        redact_tag_list = list(set(redact_tag_list))
+
+        ###
+        doc = fitz.open(pdf_file)
+
+        for page_num in range(len(doc)):
+
+            page = doc[page_num]
+
+            for redact_tag in redact_tag_list:
+                areas = page.search_for(redact_tag)
+                [page.add_redact_annot(area, fill = (0, 0, 0)) for area in areas]
+
+            # Apply all redactions on the current page
+            page.apply_redactions()
+
+        # Save the redacted document
+        doc.save(PDF_TEMP_DIR + "output_redacted.pdf")
+
+        # Close the document
+        doc.close()
+        apply_watermark(PDF_TEMP_DIR + "output_redacted.pdf",PDF_TEMP_DIR + "output_hack.pdf")

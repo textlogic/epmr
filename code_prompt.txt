@@ -1,0 +1,95 @@
+new specs:
+
+here are the requirements Please generate a full HTML/JS file using PDF.js versions as https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js and 
+
+for pdfjsLib.GlobalWorkerOptions.workerSr use https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js
+
+The Objective is to create a navigable PDF highlighting keywords.
+
+The PDF will be a multi-page PDF to be loaded from a URL variable.
+
+Do not show highlighting initially.
+
+Keywords are grouped into categories. Assign a highlighting color to each category and set the category 
+name background and border to the corresponding category color in the navigation section.
+
+Next, for each category, create a check box next to its initial value, and check that the box not checked.
+
+When the checkbox next to a category is checked, then display the keywords and the corresponding page number matched in the PDF, 
+s a list with no background. Each keyword and page number shall be hyperlinked.
+
+If the user clicks on the hyperlink, the system should scroll the PDF to that page and matched keyword.
+
+Highlighting in PDF should be in the colors specified for that category. 
+
+Once user checks the box next to category then show highlighting from that category in the corresponding color.
+
+highlighting should be the exact match on the pdf including substrings.
+
+Categories and keywords are given in a JSON array. Use the array to drive the highlight colors. 
+Two Jasons will drive the system.
+
+
+First, Jason will be categorized, and the associated colors are given below.
+
+CATEGORY = {
+    	   "Names": "#FFFF00 ",
+    	   "Dates": "#ADD8E6",
+    	   "Medications": "#00FF00",
+    	   "Vitals": "#FFA500",
+    	   "Diagnosis": "#FF00FF",
+    	   "Tests": "#FFB6C1",
+    	   "Devices": "#00FFFF "
+ };
+
+Second, Jason will have groupings of keywords. example:
+
+PDF_HILIGHTING_NAV = {
+
+  "Dates": [
+    "10/7/13",
+    "9/3/2013",
+    "9/28/13"
+  ],
+
+  "Names": [
+    "Krista Switzer",
+    "Ellen Goodwater"
+  ],
+
+  "Medications": [
+    "Tylenol",
+    "Zithromax"
+  ],
+
+  "Vitals": [
+    "BP: 90/68",
+    "P: 78",
+    "T: 100.6 (tympanic)",
+    "R: 18",
+    "WT: 30lbs",
+    "HT: 34 inches",
+    "BMI: 18.2"
+  ],
+
+  "Tests": [
+    "Rapid strep in office"
+  ],
+
+  "Diagnoses": [
+    "Strep Pharyngitis",
+    "Upper respiratory infection",
+    "Eustachian tube dysfunction",
+    "Serous otitis",
+    "Otitis media",
+    "Pneumonia"
+   ],
+   "Devices": []
+ }
+ 
+For testing, use use soap.pdf.pdf
+
+
+If there are no entries for a category, do not show it on the navigation.
+Create a PDF.js embedded HTML.
+
