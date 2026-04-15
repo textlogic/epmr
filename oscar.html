@@ -48,16 +48,16 @@ button {background:#f97316; color:white; border:none; cursor:pointer;}
 
 <button onclick="calculate()">Calculate</button>
 
-<h3>Results</h3>
+<h3>Labs Needed for the next 5 days of appointments from Selected Date</h3>
 <table id="table">
 <tr><th>Lab</th><th>Quantity</th></tr>
 </table>
 
 <pre id="json"></pre>
 
-<h3>Reorder</h3>
+<h3>Reorder Parameters</h3>
 <label>Inventory at hand</label><input id="inv" value="2">
-<label>Units per box</label><input id="box" value="2">
+<label>Units per box</label><input style="background:lightgrey;" id="box" readonly value="2">
 <label>Safety Threshold</label><input id="safe" value="5">
 <label>Shipping time</label><input id="ship" value="3">
 
